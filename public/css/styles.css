@@ -1,0 +1,350 @@
+/* ###Containers*/
+#page {
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 12px;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 130px;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 32px;
+    padding: 0px 64px;
+    color: #202E55;
+    background-color: #FFFFFF;
+}
+
+#navbar button {
+    margin-left: auto;
+}
+
+#hero {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 780px;
+    background-image: url("../images/Hero.png");
+    background-size: 1440px;
+    padding: 192px 780px 59px 144px;
+    /*justify-content: center;*/
+    align-items: flex-start;
+    color: #202E55;
+}
+
+#hero .body-l {
+    margin-right: 60px;
+}
+
+#hero button {
+    margin-top: auto;
+}
+
+#hero .heading-xl {
+    margin-bottom: 30px;
+}
+
+.cb {
+    padding: 0px;
+    margin: 0px 64px;
+}
+
+.cb-left {
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+.cb-right {
+    display: flex;
+    flex-flow: row;
+}
+
+.cb-content {
+    display: flex;
+    flex-flow: column;
+    padding: 0px 96px 0px 80px;
+    justify-content: center;
+    align-items: flex-start;
+    color: #464749;
+}
+
+.cb-content .heading-l {
+    margin-top: 24px;
+    color: #202E55;
+}
+
+.cb-image {
+    border: solid;
+    border-width: 0px;
+    border-radius: 40px;
+    border-color: #FFFFFF;
+}
+
+#contact {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 80px 112px;
+    margin: 0px 64px;
+    background: #F5F5F5;
+    border: none;
+    border-radius: 40px;
+}
+
+#contact .body-l {
+    margin-right: 608px;
+}
+
+#contact .heading-l {
+    margin-top: 24px;
+}
+
+.spacer8 {
+    height: 8px;
+    width: 100%;
+}
+
+.buttonrow {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.radiob {
+    position: relative;
+    width: 540px;
+}
+
+.radiob label,
+.radiob button {
+    display: flex;
+    position: relative;
+    background: transparent;
+    border-radius: 1000px;
+    border: 1px solid #202E55;
+    justify-content: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    color: #202E55;
+    line-height: 22px;
+    border-radius: 1000px;
+    padding: 14px 32px;
+}
+
+.radiob input[type="radio"] {
+  opacity: 0.011;
+  z-index: 100;
+  position:absolute;
+}
+
+.radiob input[type="radio"]:checked + label {
+  background: #ECD400;
+  border-radius: 1000px;
+  border: 0px solid;
+}
+
+.radiob label {
+  cursor: pointer;
+  z-index: 90;
+}
+
+
+#footer-upper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+    background-image: url("../images/Fullwith.jpg");
+    background-size: 1440px;
+    color: #FFFFFF;
+}
+#footer-upper .body-l {
+    padding: 0px 488px;
+    text-align: center;
+}
+
+#footer-lower {
+    height: 600px;
+    width: 1440px;
+    background-color: #ECD400;
+}
+
+#f-info {
+    display: flex;
+    flex-flow: row, nowrap;
+    padding: 0px 64px;
+    height: 448px;
+    gap: 32px;
+}
+
+#f-logo {
+    display: flex;
+    flex 0 0 192px;
+    align-items: center;
+}
+
+#f-infotext {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 0 0 864px;
+    justify-content: center;
+}
+
+#f-infotext .body-l {
+    margin-right: 304px;
+}
+
+#f-address {
+    display: flex;
+    flex: 0 0 192px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#f-links {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 152px;
+    gap: 0px 32px;
+    margin: 0px 64px;
+    border-top: 1px solid #202E55;
+}
+
+#f-links a {
+    font-family: "PP Neue Machina", MonoSpace;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 24px;
+    color: #202E55;
+}
+
+/*###Textstyles*/
+h1.heading-xl {
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 52px;
+}
+
+
+h2.heading-l {
+    font-family: Poppins;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+h3.heading-m {
+    font-family: Poppins;
+    font-size: 24px;
+}
+
+p.body-l {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 24px 0px;
+}
+
+.label {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: -8px;
+    text-decoration: none;
+}
+
+input[type=button],
+input[type=submit],
+button {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    color: #202E55;
+    line-height: 22px;
+    border-radius: 1000px;
+    padding: 14px 32px;
+}
+
+.wide-button {
+    width: 540px
+}
+
+
+.button-y {
+    background-color: #ECD400;
+    color: #202E55;
+    border: none;
+}
+
+.button-w {
+    background-color: #FFFFFF;
+    border: none;
+}
+
+.button-tr {
+    background-color: transparent;
+    border: 1px solid #202E55;
+}
+
+img {
+    display: block;
+    border-radius: inherit;
+}
+
+hr.footer {
+    border-top: 1px solid #202E55;
+    width: 100%;
+    margin: -8px 0px;
+}
+
+hr.form {
+    border-top: 1px solid #F5F5F5;
+    width: 100%;
+    margin: 24px 0px;
+}
+
+
+nav {
+    display: flex;
+    gap: 32px;
+}
+
+input[type=text] {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #0B0C0C;
+    height: 48px;
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 0px;
+    border: 1px solid #C8C2BD;
+}
+
+.skyblue {
+    color: #B4CAE2;
+}
+
+.medgray {
+    color: #A6A9AE;
+}
+
+.darkgray {
+    color: #464749;
+}
+
+.black {
+    color: #0B0C0C;
+}
