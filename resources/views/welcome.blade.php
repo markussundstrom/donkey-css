@@ -2,6 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="css/normalize.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
@@ -10,7 +11,7 @@
 <div id="page">
     <div id="navbar">
         <img src="images/Logo.svg">
-        <nav>
+        <nav id="navmenu">
             <a class="label" href="">Våra kläder</a>
             <a class="label" href="">Outlet</a>
             <a class="label" href="">Butiker</a>
@@ -18,6 +19,8 @@
             <a class="label" href="">Om oss</a>
         </nav>
         <button type="button" class="button-y">Get in touch</button>
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
     </div>
     <div id="hero">
         <h1 class="heading-xl">Så kliv in i Donkeys magiska värld – där barn alltid är barn.</h1>
